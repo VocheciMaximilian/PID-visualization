@@ -35,6 +35,6 @@ Parameters:
 Objective:
 Observation:
 *****************************/
-void Steering_ModifyParams(Steering *steering, float angle, float maxAngle, float steerRate);
+void Steering_ModifyParams(Steering *steering, float minAngle, float maxAngle, float steerRate);
 
 #endif

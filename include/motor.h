@@ -40,6 +40,6 @@ Parameters:
 Objective:
 Observation:
 *****************************/
-void Motor_Modify(Motor *motor, float, maxSpeed, float accelRate, float brakeRate, float drag);
+void Motor_Modify(Motor *motor, float maxSpeed, float accelRate, float brakeRate, float drag);
 
 #endif

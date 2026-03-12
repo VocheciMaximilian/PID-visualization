@@ -5,7 +5,7 @@ void Motor_Init(Motor *motor){
     motor->maxSpeed=MOTOR_MAX_SPEED;
     motor->leftSpeed=MOTOR_INITIAL_LEFT_SPEED;
     motor->rightSpeed=MOTOR_INITIAL_RIGHT_SPEED;
-    motor->rpm=MOTOR_INTIAL_RPM;
+    motor->rpm=MOTOR_INITIAL_RPM;
     motor->accelRate=MOTOR_ACCEL_RATE;
     motor->brakeRate=MOTOR_BRAKE_RATE;
     motor->drag=MOTOR_DRAG;
@@ -13,7 +13,7 @@ void Motor_Init(Motor *motor){
 void Motor_Reset(Motor *motor){
     motor->leftSpeed=MOTOR_INITIAL_LEFT_SPEED;
     motor->rightSpeed=MOTOR_INITIAL_RIGHT_SPEED;
-    motor->rpm=MOTOR_INTIAL_RPM;
+    motor->rpm=MOTOR_INITIAL_RPM;
 }
 void Motor_Update(Motor *motor, float throtle, float dt){
     throtle=clampValue(throtle, MOTOR_INPUT_MIN, MOTOR_INPUT_MAX);

@@ -1,6 +1,5 @@
 #ifndef PID_H
 #define PID_H
-#include<stdbool.h>
 #include "config.h"
 #include "common.h"
 

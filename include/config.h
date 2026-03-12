@@ -1,5 +1,6 @@
 #ifndef CONFIG_H
 #define CONFIG_H
+#include <stdbool.h>
 // pid default
 #define PID_KP 3.0f
 #define PID_KI 0.0f
@@ -18,7 +19,7 @@
 #define MOTOR_ACCEL_RATE 8.0f
 #define MOTOR_BRAKE_RATE 12.0f
 #define MOTOR_DRAG 0.8f
-#define MOTOR_INTIAL_RPM 0.0f
+#define MOTOR_INITIAL_RPM 0.0f
 #define MOTOR_INITIAL_LEFT_SPEED 0.0f
 #define MOTOR_INITIAL_RIGHT_SPEED 0.0f
 
@@ -30,6 +31,6 @@
 #define STEERING_MIN_ANGLE -0.6f
 #define STEERING_MAX_ANGLE 0.6f
 #define STEERING_RATE 3.0f
-#define STEERING_INTIAL_ANGLE 0.0f
+#define STEERING_INITIAL_ANGLE 0.0f
 
 #endif
