@@ -18,7 +18,7 @@ void PID_Init(PID *pid){
 void PID_Reset(PID *pid){
   pid->integral=PID_INTEGRAL;
   pid->hasPrevious=PID_HAS_PREVIOUS;
-  pid->preivousError=PID_PREVIOUS_ERROR;
+  pid->previousError=PID_PREVIOUS_ERROR;
 }
 
 float PID_Update(PID *pid, float error, float dt){

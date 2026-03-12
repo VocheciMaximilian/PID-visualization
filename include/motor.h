@@ -40,6 +40,12 @@ Parameters:
 Objective:
 Observation:
 *****************************/
-void Motor_Modify(Motor *motor, float maxSpeed, float accelRate, float brakeRate, float drag);
-
+void Motor_Modify(Motor *motor, float minSpeed, float maxSpeed, float accelRate, float brakeRate, float drag);
+/*****************************
+Function:
+Parameters:
+Objective:
+Observation:
+*****************************/
+float Motor_GetAvgSpeed(float left, float right);
 #endif

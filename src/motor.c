@@ -26,9 +26,9 @@ void Motor_Update(Motor *motor, float throtle, float dt){
 
     motor->leftSpeed=speed;
     motor->rightSpeed=speed;
-    moto->rpm=speed;
+    motor->rpm=speed;
 }
-void Motor_Modify(Motor *motor, float minSpeed, float, maxSpeed, float accelRate, float brakeRate, float drag){
+void Motor_Modify(Motor *motor, float minSpeed, float maxSpeed, float accelRate, float brakeRate, float drag){
     motor->minSpeed = minSpeed;
     motor->maxSpeed = maxSpeed;
     motor->accelRate = accelRate;
@@ -36,6 +36,6 @@ void Motor_Modify(Motor *motor, float minSpeed, float, maxSpeed, float accelRate
     motor->drag = drag;
 }
 
-void Motor_GetAvgSpeed(float left, float right){
+float Motor_GetAvgSpeed(float left, float right){
     return (left+right)/MOTOR_TWO_WHEELS;
 }
