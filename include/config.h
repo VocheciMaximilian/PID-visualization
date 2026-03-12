@@ -27,6 +27,7 @@
 #define MOTOR_INPUT_NEUTRAL 0.0f
 #define MOTOR_TWO_WHEELS 2.0f
 // steering default
+#define STEERING_MIN_ANGLE -0.6f
 #define STEERING_MAX_ANGLE 0.6f
 #define STEERING_RATE 3.0f
 #define STEERING_INTIAL_ANGLE 0.0f
