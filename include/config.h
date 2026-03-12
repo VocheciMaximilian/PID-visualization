@@ -51,5 +51,7 @@
 #define CAR_DEFAULT_X 0.0f
 #define CAR_DEFAULT_Y 0.0f
 #define CAR_DEFAULT_HEADING 0.0f
-
+// pure pursuit
+#define PURE_PURSUIT_MIN_LOOKAHEAD 5.0f
+#define PURE_PURSUIT_DEFAULT_LOOKAHEAD 60.0f
 #endif
