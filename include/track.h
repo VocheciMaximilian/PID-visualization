@@ -3,6 +3,7 @@
 
 #include "config.h"
 #include "raylib.h"
+#include "raymath.h"
 
 typedef struct{
     Vector2 controlPoints[TRACK_MAX_CONTROL_POINTS];
@@ -23,7 +24,7 @@ Parameters:
 Objective:
 Observation:
 *****************************/
-void Track_init(Track *track);
+void Track_Init(Track *track);
 /*****************************
 Function:
 Parameters:
