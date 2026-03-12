@@ -1,8 +1,10 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
+#include "config.h"
 #include "common.h"
 typedef struct{
+  float minSpeed;
   float maxSpeed;
   float leftSpeed;
   float rightSpeed;
@@ -38,6 +40,6 @@ Parameters:
 Objective:
 Observation:
 *****************************/
-void Motor_Modify
+void Motor_Modify(Motor *motor, float, maxSpeed, float accelRate, float brakeRate, float drag);
 
 #endif
