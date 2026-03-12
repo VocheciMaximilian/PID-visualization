@@ -43,4 +43,13 @@
 #define TRACK_FINALIZED false
 #define TRACK_LAST_SPLINE_POINT_OFFSET 2
 #define TRACK_SPLINE_WINDOW 4 //MulRom needs 4 points
+//car
+#define CAR_DEFAULT_WHEELBASE 28.0f
+#define CAR_DEFAULT_WHEELRADIUS 3.0f
+#define CAR_MIN_WHEELBASE 0.001f
+#define CAR_MIN_WHEELRADIUS 0.001f
+#define CAR_DEFAULT_X 0.0f
+#define CAR_DEFAULT_Y 0.0f
+#define CAR_DEFAULT_HEADING 0.0f
+
 #endif
