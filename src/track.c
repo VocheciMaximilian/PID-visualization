@@ -57,7 +57,7 @@ static void Track_AddControlPoint(Track *track, Vector2 p){
     if(track->controlCount>=TRACK_MAX_CONTROL_POINTS) return;
     track->controlPoints[track->controlCount++]=p;
 }
-static Vector2 Track_GetCenterLinePointCatmullRom(const Track *track, int segmentIndex, float t) {
+static Vector2 Track_GetCenterLinePointCatMullRom(const Track *track, int segmentIndex, float t) {
     Vector2 p0=track->controlPoints[segmentIndex];
     Vector2 p1=track->controlPoints[segmentIndex+1];
     Vector2 p2=track->controlPoints[segmentIndex+2];
@@ -66,7 +66,7 @@ static Vector2 Track_GetCenterLinePointCatmullRom(const Track *track, int segmen
     return GetSplinePointCatmullRom(p0, p1, p2, p3, t);
 }
 void Track_RebuildCenterLine(Track *track){
-    track->centerLineCount=TRACK_DEFAULT_CONTROL_COUNT;
+    track->centerLineCount=TRACK_DEFAULT_CENTERLINE_COUNT;
     if(track->controlCount<TRACK_SPLINE_WINDOW) return;
 
     int maxSegmentStart=track->controlCount-TRACK_SPLINE_WINDOW;

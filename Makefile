@@ -1,7 +1,7 @@
 CC := gcc
 
 CFLAGS := -Wall -Wextra -Wpedantic -Wshadow -std=c11 -g -Iinclude
-LDFLAGS := -lm -lraylib
+LDFLAGS := -lraylib -lm -ldl -lpthread -lGL -lrt -lX11
 
 SRC_DIR := src
 OBJ_DIR := build
